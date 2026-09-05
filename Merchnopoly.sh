@@ -1,3 +1,5 @@
+#!/bin/sh
+
 PYTHON="py3"
 SCRIPT="$0"
 
