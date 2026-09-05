@@ -6,11 +6,9 @@ _object = object
 def update_path():
     import sys
     import os.path
-
     name = sys._getframe(1).f_globals["__name__"]
     package = sys.modules[name]
     name = name.split(".")
-
     try:
         import _renpy
         if hasattr(_renpy, '__file__') and _renpy.__file__ != "built-in":
@@ -38,7 +36,6 @@ try:
 except ImportError:
     import renpy.versions
     version_dict = renpy.versions.get_version()
-
     official = version_dict["official"]
     nightly = version_dict["nightly"]
     version_name = version_dict["version_name"]
@@ -467,8 +464,6 @@ def reload_all():
 
 if 1 == 0:
     store = None
-
-if 1 == 0:
     from . import add_from
     from . import arguments
     from . import ast
@@ -1236,3 +1231,87 @@ except Exception:
         platform = "iOS"
     else:
         platform = "Unknown"
+
+################################################################################ GL, SL
+
+renpy.update_path()
+
+if 1 == 0:
+    from . import gldraw
+    from . import glenviron_shader
+    from . import glfunctions
+    from . import glrtt_copy
+    from . import glrtt_fbo
+    from . import gltexture
+
+    from . import gl2debug
+    from . import gl2draw
+    from . import gl2functions
+    from . import gl2mesh
+    from . import gl2mesh2
+    from . import gl2mesh3
+    from . import gl2model
+    from . import gl2polygon
+    from . import gl2shader
+    from . import gl2shadercache
+    from . import gl2texture
+    from . import live2d
+    from . import live2dmodel
+    from . import live2dmotion
+
+    from . import slast
+    from . import sldisplayables
+    from . import slparser
+    from . import slproperties
+
+################################################################################ Style data
+
+def import_style_functions():
+    import renpy.styledata.stylesets
+    import renpy.styledata.style_functions
+    import renpy.styledata.style_activate_functions
+    import renpy.styledata.style_hover_functions
+    import renpy.styledata.style_idle_functions
+    import renpy.styledata.style_insensitive_functions
+    import renpy.styledata.style_selected_functions
+    import renpy.styledata.style_selected_activate_functions
+    import renpy.styledata.style_selected_hover_functions
+    import renpy.styledata.style_selected_idle_functions
+    import renpy.styledata.style_selected_insensitive_functions
+    import renpy.styledata.styleclass
+    renpy.style.Style = renpy.styledata.styleclass.Style
+
+if 1 == 0:
+    from . import style_activate_functions
+    from . import style_functions
+    from . import style_hover_functions
+    from . import style_idle_functions
+    from . import style_insensitive_functions
+    from . import style_selected_activate_functions
+    from . import style_selected_functions
+    from . import style_selected_hover_functions
+    from . import style_selected_idle_functions
+    from . import style_selected_insensitive_functions
+    from . import styleclass
+    from . import stylesets
+    from . import styleutil
+
+################################################################################ Test, Text
+
+if 1 == 0:
+    from . import testast
+    from . import testexecution
+    from . import testfocus
+    from . import testkey
+    from . import testmouse
+    from . import testparser
+
+    from . import emoji_trie
+    from . import extras
+    from . import font
+    from . import ftfont
+    from . import hbfont
+    from . import shader
+    from . import text
+    from . import textsupport
+    from . import texwrap
