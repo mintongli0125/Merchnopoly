@@ -235,7 +235,6 @@ def plog(level, even, *args):
     """
     return
 
-
 def import_all():
     import renpy
     import renpy.config
@@ -531,8 +530,6 @@ if 1 == 0:
     from . import versions
     from . import warp
     from . import webloader
-
-
 
 ################################################################################ Audio
 
@@ -1296,7 +1293,9 @@ if 1 == 0:
     from . import stylesets
     from . import styleutil
 
-################################################################################ Test, Text
+################################################################################ Test, Text, Uguu, Update
+
+from renpy.uguu.uguu import *
 
 if 1 == 0:
     from . import testast
@@ -1315,3 +1314,9 @@ if 1 == 0:
     from . import text
     from . import textsupport
     from . import texwrap
+
+    from . import uguu
+    from . import common
+    from . import download
+    from . import generate
+    from . import update
