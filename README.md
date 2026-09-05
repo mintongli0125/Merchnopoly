@@ -14,7 +14,7 @@ Good luck & go run that stall!!!
 
 ==================================================================================
 
-FROM THE CODER
+# FROM THE CODER
 
 Partial code (whole game's too big for GitHub web...), NOT full product – play the full game at [itch.io](https://quokka-studio.itch.io/merchnopoly)!
 You can also view this code at ../Contents/Resources/autorun if downloaded from [itch.io](https://quokka-studio.itch.io/merchnopoly). Note certain portions of code have been adapted for GitHub view (some comments removed to make upload faster...).
@@ -22,7 +22,7 @@ You can also view this code at ../Contents/Resources/autorun if downloaded from 
 
 ==================================================================================
 
-CREDIT
+# CREDIT
 
 Yakulty:
 [https://yaklut001.straw.page/](https://yaklut001.straw.page/)
