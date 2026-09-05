@@ -1,11 +1,8 @@
-#!/bin/sh
-
 PYTHON="py3"
 SCRIPT="$0"
 
 while [ -L "$SCRIPT" ] ; do
     LINK=$(readlink "$SCRIPT")
-
     case "$LINK" in
         /*)
             SCRIPT="$LINK"
@@ -18,12 +15,10 @@ done
 
 ROOT=$(dirname "$SCRIPT")
 ROOT=$(cd "$ROOT"; pwd)
-
 BASEFILE=$(basename "$SCRIPT" .sh)
 
 if [ -z "$RENPY_PLATFORM" ] ; then
     RENPY_PLATFORM="$(uname -s)-$(uname -m)"
-
     case "$RENPY_PLATFORM" in
         Darwin-*|mac-*)
             RENPY_PLATFORM="mac-universal"
@@ -59,7 +54,6 @@ fi
 if [ -e "$LIB/$BASEFILE" ] ; then
     exec $RENPY_GDB "$LIB/$BASEFILE" "$@"
 fi
-
 if [ -e "$LIB/renpy" ] ; then
     exec $RENPY_GDB "$LIB/renpy" "$@"
 fi
