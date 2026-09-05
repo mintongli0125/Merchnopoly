@@ -1,5 +1,5 @@
 from __future__ import division, absolute_import, with_statement, print_function, unicode_literals
-from renpy.compat import PY2, basestring, bchr, bord, chr, open, pystr, range, round, str, tobytes, unicode # *
+from renpy.compat import PY2, basestring, bchr, bord, chr, open, pystr, range, round, str, tobytes, unicode
 from typing import Tuple, List, Dict, Set, Optional, Iterable, Any
 import os
 import sys
@@ -99,7 +99,7 @@ def choose_variants():
         return
     renpy.config.variants = [ None ]
 
-    if renpy.android: # @UndefinedVariable
+    if renpy.android:
         renpy.config.variants.insert(0, 'mobile')
         renpy.config.variants.insert(0, 'android')
         import android
@@ -147,7 +147,7 @@ def choose_variants():
         renpy.config.variants.insert(0, 'mobile')
         renpy.config.variants.insert(0, 'ios')
         renpy.config.variants.insert(0, 'touch')
-        from pyobjus import autoclass # type: ignore
+        from pyobjus import autoclass
         UIDevice = autoclass("UIDevice")
         idiom = UIDevice.currentDevice().userInterfaceIdiom
         print("iOS device idiom", idiom)
@@ -159,7 +159,7 @@ def choose_variants():
             renpy.config.variants.insert(0, 'small')
 
     elif renpy.emscripten:
-        import emscripten # type: ignore
+        import emscripten
         import re
         renpy.config.variants.insert(0, 'web')
 
@@ -216,10 +216,10 @@ def main():
         print("Version:", renpy.version)
 
     game.basepath = renpy.config.gamedir
-    renpy.config.commondir = renpy.__main__.path_to_common(renpy.config.renpy_base) # E1101 @UndefinedVariable
-    renpy.config.searchpath = renpy.__main__.predefined_searchpath(renpy.config.commondir) # E1101 @UndefinedVariable
+    renpy.config.commondir = renpy.__main__.path_to_common(renpy.config.renpy_base)
+    renpy.config.searchpath = renpy.__main__.predefined_searchpath(renpy.config.commondir)
 
-    for dir in [ renpy.config.renpy_base ] + renpy.config.searchpath: # @ReservedAssignment
+    for dir in [ renpy.config.renpy_base ] + renpy.config.searchpath:
         if not os.path.isdir(dir):
             continue
         for fn in sorted(os.listdir(dir)):
@@ -250,8 +250,8 @@ def main():
 
     log_clock("Early init")
     game.log = renpy.python.RollbackLog()
-    renpy.store.store = sys.modules['store'] # type: ignore
-    game.style = renpy.style.StyleManager() # @UndefinedVariable
+    renpy.store.store = sys.modules['store']
+    game.style = renpy.style.StyleManager()
     renpy.store.style = game.style
     game.contexts = [ renpy.execution.Context(False) ]
     game.contexts[0].init_phase = True
@@ -260,7 +260,7 @@ def main():
     renpy.game.exception_info = 'While loading the script.'
     renpy.game.script = renpy.script.Script()
     if renpy.session.get("compile", False):
-        renpy.game.args.compile = True # type: ignore
+        renpy.game.args.compile = True
 
     renpy.exports.load_module("_errorhandling")
     if renpy.exports.loadable("tl/None/common.rpym") or renpy.exports.loadable("tl/None/common.rpymc"):
@@ -318,9 +318,9 @@ def main():
         game.preferences = game.persistent._preferences
         log_clock("Loading persistent")
         game.seen_session = { }
-        renpy.store.persistent = game.persistent # type: ignore
-        renpy.store._preferences = game.preferences # type: ignore
-        renpy.store._test = renpy.test.testast._test # type: ignore
+        renpy.store.persistent = game.persistent
+        renpy.store._preferences = game.preferences
+        renpy.store._test = renpy.test.testast._test
 
         if renpy.parser.report_parse_errors():
             raise renpy.game.ParseErrorException()
