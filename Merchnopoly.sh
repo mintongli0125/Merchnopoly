@@ -3,7 +3,6 @@
 PYTHON="py3"
 SCRIPT="$0"
 
-# Resolve the chain of symlinks leading to this script.
 while [ -L "$SCRIPT" ] ; do
     LINK=$(readlink "$SCRIPT")
 
@@ -17,11 +16,9 @@ while [ -L "$SCRIPT" ] ; do
     esac
 done
 
-# The directory containing this shell script - an absolute path.
 ROOT=$(dirname "$SCRIPT")
 ROOT=$(cd "$ROOT"; pwd)
 
-# The name of this shell script without the .sh on the end.
 BASEFILE=$(basename "$SCRIPT" .sh)
 
 if [ -z "$RENPY_PLATFORM" ] ; then
