@@ -5,6 +5,8 @@
 Wanna prepare yourself for your first ever merch stall? Wanna see what customers you'll meet at an anime convention? We have the game for you!
 Merchnopoly is a first-person simulation game, where you play as a merch stall owner. Converse with customers, navigate their interests & whims, and coax them into buying your merch!
 
+<img width="387" height="199" alt="Screenshot 2026-09-06 at 9 56 59 AM" src="https://github.com/user-attachments/assets/16e1f96a-b69f-4c62-af22-19503e78a539" />
+
 Cozy, short, replayable. An idea never seen before. Make Merchnopoly your next new free game.
 
 💸 Estimated play time: 5~10 minutes
@@ -16,6 +18,8 @@ Cozy, short, replayable. An idea never seen before. Make Merchnopoly your next n
 Good luck & go run that stall!!!
 
 (Deployed Feb 2025 at [https://quokka-studio.itch.io/merchnopoly](https://quokka-studio.itch.io/merchnopoly))
+
+<img width="931" height="167" alt="Screenshot 2026-09-06 at 9 58 21 AM" src="https://github.com/user-attachments/assets/baf09439-0936-4937-9cc1-b935efebd8a4" />
 
 ## From the coder
 
