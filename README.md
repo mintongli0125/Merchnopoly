@@ -1,6 +1,6 @@
-[# 💸💸  POV: Someone's coming up to your stall!
+# 💸💸  POV: Someone's coming up to your stall!
 
-Better grasp their attention... 💸💸](https://quokka-studio.itch.io/merchnopoly)
+[Better grasp their attention... 💸💸](https://quokka-studio.itch.io/merchnopoly)
 
 Wanna prepare yourself for your first ever merch stall? Wanna see what customers you'll meet at an anime convention? We have the game for you!
 Merchnopoly is a first-person simulation game, where you play as a merch stall owner. Converse with customers, navigate their interests & whims, and coax them into buying your merch!
