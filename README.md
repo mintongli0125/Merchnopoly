@@ -5,7 +5,7 @@
 Wanna prepare yourself for your first ever merch stall? Wanna see what customers you'll meet at an anime convention? We have the game for you!
 Merchnopoly is a first-person simulation game, where you play as a merch stall owner. Converse with customers, navigate their interests & whims, and coax them into buying your merch!
 
-<img width="387" height="199" alt="Screenshot 2026-09-06 at 9 56 59 AM" src="https://github.com/user-attachments/assets/16e1f96a-b69f-4c62-af22-19503e78a539" />
+<img height="400" alt="Screenshot 2026-09-06 at 9 56 59 AM" src="https://github.com/user-attachments/assets/16e1f96a-b69f-4c62-af22-19503e78a539" />
 
 Cozy, short, replayable. An idea never seen before. Make Merchnopoly your next new free game.
 
