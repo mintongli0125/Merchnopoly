@@ -17,8 +17,6 @@ Good luck & go run that stall!!!
 
 (Deployed Feb 2025 at [https://quokka-studio.itch.io/merchnopoly](https://quokka-studio.itch.io/merchnopoly))
 
-==================================================================================
-
 ## From the coder
 
 Partial code (whole game's too big for GitHub web...), NOT full product – play the full game at [itch.io](https://quokka-studio.itch.io/merchnopoly)!
@@ -26,8 +24,6 @@ Partial code (whole game's too big for GitHub web...), NOT full product – play
 You can also view this code at ../Contents/Resources/autorun if downloaded from [itch.io](https://quokka-studio.itch.io/merchnopoly). Note certain portions of code have been adapted for GitHub view (some comments removed to make upload faster...).
 
 /game files are a combination of Python and Ren'Py. A few /renpy files are provided here as an example of Ren'Py functions' reliance on Python.
-
-==================================================================================
 
 ## Credit
 
